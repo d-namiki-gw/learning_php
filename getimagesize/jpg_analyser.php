@@ -8,7 +8,7 @@ class JpgAnalysis extends ImageAnalysisBase
     {
         $section = $this->analysis_bin($bin);
         return [
-            "height" => $this->get_int_param($bin, $section, 12),
+            "height" => $this->get_int_param($bin, $section, 10),
             "width"  => $this->get_int_param($bin, $section, 14)
         ];
     }
