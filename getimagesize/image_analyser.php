@@ -42,7 +42,7 @@ function curl_vs_getimagesize (string $url)
 
     $getimagesize_result = measure_run_time(function () use ($url) {
         list($w, $h) = getimagesize($url);
-        return [$w, $h];
+        return ["width" => $w, "height" => $h];
     });
 
     return [
