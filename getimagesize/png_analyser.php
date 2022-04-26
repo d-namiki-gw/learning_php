@@ -9,8 +9,8 @@ class PngAnalysis extends ImageAnalysisBase
         $section = new MediaSection();
         $section->pos = 16;
         return [
-            "width" => $this->get_long_param($bin, $section, 16),
-            "height"  => $this->get_long_param($bin, $section, 24),
+            "width" => $this->get_long_param($bin, $section, 8),
+            "height"  => $this->get_long_param($bin, $section, 12),
         ];
     }
 }

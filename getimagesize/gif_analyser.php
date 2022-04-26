@@ -9,8 +9,8 @@ class GifAnalysis extends ImageAnalysisBase
         $section = new MediaSection();
         $section->pos = 0;
         return [
-            "width" => $this->get_int_param_le($bin, $section, 12),
-            "height"  => $this->get_int_param_le($bin, $section, 16),
+            "width" => $this->get_int_param_le($bin, $section, 6),
+            "height"  => $this->get_int_param_le($bin, $section, 8),
         ];
     }
 }
